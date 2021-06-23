@@ -106,8 +106,8 @@
 
 ``用户名、手机号全系统唯一，如果用户名或手机号在其他机构注册过了，不能再注册，请更换``
 
-##2、登陆
-#####URL： */agency.old_api/login*
+## 2、登陆
+##### URL： */agency.old_api/login*
 
 **请求方式：** POST
 
@@ -138,8 +138,8 @@
         }
 }
 ```
-##3、修改密码
-#####URL： */agency.old_api/updatePass*
+## 3、修改密码
+##### URL： */agency.old_api/updatePass*
 
 **请求方式：** POST
 
@@ -160,8 +160,8 @@
 }
 ```
 
-##4、获取考试信息
-#####URL： */agency.old_api/getExams*
+## 4、获取考试信息
+##### URL： */agency.old_api/getExams*
 
 **请求方式：** POST
 
@@ -184,8 +184,8 @@
         }
 }
 ```
-##5、获取考试下的科目
-#####URL： */agency.old_api/getExamsToSubject*
+## 5、获取考试下的科目
+##### URL： */agency.old_api/getExamsToSubject*
 
 **请求方式：** POST
 
@@ -209,8 +209,8 @@
         }]
 }
 ```
-##6、获取考试下的班级
-#####URL： */agency.old_api/getExamClass*
+## 6、获取考试下的班级
+##### URL： */agency.old_api/getExamClass*
 
 **请求方式：** POST
 
@@ -244,8 +244,8 @@
     }]
 }
 ```
-##7、获取考试下的班级
-#####URL： */agency.old_api/getExamClass*
+## 7、获取考试下的班级
+##### URL： */agency.old_api/getExamClass*
 
 **请求方式：** POST
 
@@ -279,8 +279,8 @@
     }]
 }
 ```
-##8、获取考试下的套餐
-#####URL： */agency.old_api/getExamPackage*
+## 8、获取考试下的套餐
+##### URL： */agency.old_api/getExamPackage*
 
 **请求方式：** POST
 
@@ -316,8 +316,8 @@
     }]
 }
 ```
-##9、获取老师
-#####URL： */agency.old_api/getTeacher*
+## 9、获取老师
+##### URL： */agency.old_api/getTeacher*
 
 **请求方式：** POST
 
@@ -349,8 +349,8 @@
     }]
 }
 ```
-##10、获取班级下课时
-#####URL： */agency.old_api/getClassLesses*
+## 10、获取班级下课时
+##### URL： */agency.old_api/getClassLesses*
 
 **请求方式：** POST
 
@@ -380,8 +380,8 @@
     }]
 }
 ```
-##11、获取课时播放H5页面
-#####URL： */agency.old_api/get_video*
+## 11、获取课时播放H5页面
+##### URL： */agency.old_api/get_video*
 
 **请求方式：** POST
 
@@ -408,8 +408,8 @@
 
 ``web对接可用iframe嵌入返回的视频播放H5页面地址，app对接可用webview嵌入返回的视频播放H5页面地址，有过期时间，请勿保存，需要实时获取``
 
-##12、获取课时讲义
-#####URL： */agency.old_api/getPptUrl*
+## 12、获取课时讲义
+##### URL： */agency.old_api/getPptUrl*
 
 **请求方式：** POST
 
@@ -434,8 +434,8 @@
 
 ``讲义下载地址有过期时间，请勿保存，需要实时获取``
 
-##13、开课
-#####URL： */agency.api/operate_course*
+## 13、开课
+##### URL： */agency.api/operate_course*
 
 **请求方式：** POST
 
@@ -457,8 +457,8 @@
     "data": null
 }
 ```
-##14、退课申请
-#####URL： */agency.api/refund_course*
+## 14、退课申请
+##### URL： */agency.api/refund_course*
 
 **请求方式：** POST
 
@@ -482,8 +482,8 @@
 }
 ```
 
-##15、获取学员已购班级
-#####URL： */agency.user/classes*
+## 15、获取学员已购班级
+##### URL： */agency.user/classes*
 **请求方式：** POST
 
 **请求参数：**
@@ -497,23 +497,24 @@
 **返回值：**
 ```json
 {
-    "code": 200,
-    "message": "请求成功",
-    "data": [
-        {
-            "class_id": "班级id，int",
-            "class_name": "班级名称，string",
-            "exam_id": "考试id，int",
-            "exam_name": "考试名，string",
-            "target_type_name": "班型，string",
-            "year": "年份，int",
-            "validity": "到期时间，YYYY-MM-dd，string",
-            "lesson_num": "课时数,int",
-            "rating": "评分，int",
-            "member_num": "已购人数，int",
-            "desc": "简介，string",
-            "img": "班级缩略图，string",
-            "lesson_id": "试听课时id，int"
-        }]
+    "code": 200,
+    "message": "请求成功",
+    "data": [
+        {
+            "class_id": "班级id，int",
+            "class_name": "班级名称，string",
+            "exam_id": "考试id，int",
+            "exam_name": "考试名，string",
+            "target_type_name": "班型，string",
+            "year": "年份，int",
+            "validity": "到期时间，YYYY-MM-dd，string",
+            "lesson_num": "课时数,int",
+            "rating": "评分，int",
+            "member_num": "已购人数，int",
+            "desc": "简介，string",
+            "img": "班级缩略图，string",
+            "lesson_id": "试听课时id，int"
+        }
+    ]
 }
 ```
