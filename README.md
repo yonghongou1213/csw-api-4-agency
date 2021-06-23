@@ -244,42 +244,7 @@
     }]
 }
 ```
-## 7、获取考试下的班级
-##### URL： */agency.old_api/getExamClass*
-
-**请求方式：** POST
-
-**请求参数：**
-```json
-{
-    "examId":"考试id，int，必传"
-}
-```
-
-**返回值：**
-
-```json
-{
-    "code": 200,
-    "message": "请求成功!",
-    "data": [{
-            "lesson_id": "试听课时id,int，没有时为0或null",
-            "class_id": "班级id,int",
-            "class_name": "班级名称，string",
-            "type": "产品类型，string，固定值为class",
-            "subject_id": "班级对应的科目id，int",
-            "img": "班级缩略图，string",
-            "type_id": "班级类型id，int",
-            "year": "班级年份，int",
-            "validity": "班级有效期，int，为时间戳则是固定有效期，为小于100的数则是表示自开通日期后生效的月数",
-            "lesson_num": "课时数量，int",
-            "guide_price": "指导价，double",
-            "sort": "排序，int",
-            "desc": "班级介绍，string"
-    }]
-}
-```
-## 8、获取考试下的套餐
+## 7、获取考试下的套餐
 ##### URL： */agency.old_api/getExamPackage*
 
 **请求方式：** POST
@@ -316,7 +281,7 @@
     }]
 }
 ```
-## 9、获取老师
+## 8、获取老师
 ##### URL： */agency.old_api/getTeacher*
 
 **请求方式：** POST
@@ -349,7 +314,7 @@
     }]
 }
 ```
-## 10、获取班级下课时
+## 9、获取班级下课时
 ##### URL： */agency.old_api/getClassLesses*
 
 **请求方式：** POST
@@ -380,7 +345,7 @@
     }]
 }
 ```
-## 11、获取课时播放H5页面
+## 10、获取课时播放H5页面
 ##### URL： */agency.old_api/get_video*
 
 **请求方式：** POST
@@ -408,7 +373,7 @@
 
 ``web对接可用iframe嵌入返回的视频播放H5页面地址，app对接可用webview嵌入返回的视频播放H5页面地址，有过期时间，请勿保存，需要实时获取``
 
-## 12、获取课时讲义
+## 11、获取课时讲义
 ##### URL： */agency.old_api/getPptUrl*
 
 **请求方式：** POST
@@ -434,7 +399,7 @@
 
 ``讲义下载地址有过期时间，请勿保存，需要实时获取``
 
-## 13、开课
+## 12、开课
 ##### URL： */agency.api/operate_course*
 
 **请求方式：** POST
@@ -457,7 +422,7 @@
     "data": null
 }
 ```
-## 14、退课申请
+## 13、退课申请
 ##### URL： */agency.api/refund_course*
 
 **请求方式：** POST
@@ -482,7 +447,7 @@
 }
 ```
 
-## 15、获取学员已购班级
+## 14、获取学员已购班级
 ##### URL： */agency.user/classes*
 **请求方式：** POST
 
