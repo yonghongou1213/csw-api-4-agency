@@ -45,13 +45,9 @@
         "sign" => $sign
       ];
 ```
-
 #全局参数及要求
-
 #####2.1 请求域名为 https://api.chaosw.com
-
 #####2.2 每次请求，token及sign是必须传入的参数，接口文档中不再单独将这两个参数列出
-
 #####2.3 响应的数据结构体为json对象
 ```json
  {
@@ -485,6 +481,7 @@
     "data": null
 }
 ```
+
 ##15、获取学员已购班级
 #####URL： */agency.user/classes*
 **请求方式：** POST
@@ -504,7 +501,7 @@
     "message": "请求成功",
     "data": [
         {
-            "class_id": "班级id，int",
+            "class_id": "班级id，int",
             "class_name": "班级名称，string",
             "exam_id": "考试id，int",
             "exam_name": "考试名，string",
